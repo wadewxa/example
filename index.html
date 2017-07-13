@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="bower_components/raty/lib/jquery.raty.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script src="bower_components/raty/lib/jquery.raty.js"></script>
+    <script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Example Spotify</title>
+</head>
+
+<body>
+    <!--導覽列開始-->
+    <nav class="navbar navbar-inverse  navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- 導覽列 RWD選單圖示與品牌連結 -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">觸發縮放</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span><img src="image/logo.png"/></span>&nbsp;Spotify</a>
+
+            </div>
+
+            <!-- 導覽列選項 與導覽列中的表單元素 -->
+            <!-- 小螢幕時要被收起的元素 放置於 navbar-collapse -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- 拉到右邊的導覽列清單 -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#premium">Premiun</a></li>
+                    <li><a href="#help">幫助中心</a></li>
+                    <li><a href="#download">下載</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#singUp">註冊</a></li>
+                    <li><a href="#singIn">登入</a></li>
+                </ul>
+            </div>
+
+            <!-- /.navbar-collapse <-->
+
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!--導覽列結束-->
+    <!--輪播開始-->
+    <header>
+        <div id="mainSlide" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <!--輪播圖片或內容-->
+                <div class="item active">
+                    <img class="img-responsive" src="https://source.unsplash.com/IiwYeihxC58">
+                    <div class="carousel-caption">
+                        <div id="banner1" class="full-width">
+                            <h1> 音樂人人愛</h1>
+                            <a href="#" class="btn">立即使用 Spotify 免費版</a>
+                            <a href="#" class="btn">註冊成為 Spotify Premium 會員</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"><img class="img-responsive" src="https://source.unsplash.com/E--AUpYXbjM">
+                    <div class="carousel-caption">
+                        <div id="banner2" class="full-width">
+                            <h1>全家都能使用 Premium。 只要 NT$240.00 元。</h1>
+                            <a href="#" class="btn">暸解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"><img class="img-responsive" src="https://source.unsplash.com/W7pBPWTRmuY">
+                    <div class="carousel-caption">
+                        <div id="banner3" class="full-width">
+                            <h1> 透過 PlayStation® 播放 Spotify。</h1>
+                            <a href="#" class="btn">暸解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--上一頁 下一頁 按鈕-->
+            <div class="control-btn">
+                <a href="#mainSlide" class="left carousel-control" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a href="#mainSlide" class="right carousel-control" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" ></span></a>
+            </div>
+        </div>
+        <!--輪播結尾-->
+    </header>
+    <section>
+        <div class="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 col-md-5">
+                        <h2 class="animated animatedFadeInUp">Spotify 上有些什麼？</h2>
+                        <div class="animated animatedFadeInUp">
+                            <h3>音樂</h3>
+                            <p>Spotify 上有超過數百萬首歌曲。你可以播放最愛的歌曲、發掘新的音樂，並打造你的完美收藏。</p>
+                        </div>
+                        <div class="animated animatedFadeInUp">
+                            <h3>播放列表</h3>
+                            <p>你可以找到由樂迷和專家們共同打造、配合不同心情的現成播放清單。</p>
+                        </div>
+                        <div class="animated animatedFadeInUp">
+                            <h3>最新發行</h3>
+                            <p>聆聽本週的最新單曲和專輯，並瞧瞧前 50 大熱門歌曲有哪些。</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-1 col-md-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="easy-do">
+            <div class="container">
+                <div class="col-sm-6 col-md-5 col-md-offset-1 col-lg-4 text-white">
+                    <div class="phone-screen">
+                        <p class="text-center">專為你打造</p>
+                        <div class="album-img-container clearfix">
+                            <div class="album-img">
+                                <img src="//www.scdn.co/i/home/your_daily_mix.jpg" alt="Your Daily Mix">
+                                <p>Your Daily Mix</p>
+                            </div>
+                            <div class="album-img">
+                                <img src="//www.scdn.co/i/home/your_release_radar.jpg" alt="Release Radar">
+                                <p>Release Radar</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <span>排行榜</span>
+                                <img src="image/arrow_right.png" alt="">
+
+                            </li>
+                            <li>
+                                <span>最新發行</span>
+                            </li>
+                            <li>
+                                <span>短片</span>
+                            </li>
+                            <li>
+                                <span>Podcasts</span>
+                            </li>
+                            <li>
+                                <span>探索</span>
+                            </li>
+                            <li>
+                                <span>演唱會</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-5 col-lg-offset-1 text-white">
+                    <div class="animated animatedFadeInUp">
+                        <h2>
+                            超級簡單。
+                        </h2>
+                    </div>
+                    <div class="animated animatedFadeInUp">
+                        <h3>
+                            搜尋
+                        </h3>
+                        <p>
+                            知道自己想要聽些什麼嗎？只要搜尋然後按下「播放」即可。
+                        </p>
+                    </div>
+                    <div class="animated animatedFadeInUp">
+                        <h3>
+                            瀏覽
+                        </h3>
+                        <p>
+                            立即查看最新的排行榜、全新發布內容及超棒的播放清單。
+                        </p>
+                    </div>
+                    <div class="animated animatedFadeInUp">
+                        <h3>
+                            探索
+                        </h3>
+                        <p>
+                            在每週一利用你專屬的個人播放清單欣賞新音樂，或輕鬆愜意地聆聽電台。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="work-devices">
+            <div class="container">
+                <div class="col-sm-12 col-md-6">
+                    <div class="animated animatedFadeInUp">
+                        <h2>一個帳戶。在各種裝置上播放。 </h2>
+                    </div>
+                    <div class="animated animatedFadeInUp">
+                        <ul class="device-list">
+                            <li><b>Mobile</b></li>
+                            <li><b>電腦</b></li>
+                            <li><b>平板電腦</b></li>
+                            <li><b>汽車</b></li>
+                        </ul>
+                        <ul class="device-list">
+                            <li><b>喇叭</b></li>
+                            <li><a id="playstation-text-link" href="empty.html" data-tracking='{"category": "home (devices)", "action": "playstation"}'><b>PlayStation®</b></a></li>
+                            <li><b>電視</b></li>
+                            <li><a id="webplayer-text-link" class="hidden-xs js-button-webplayerlink" href="empty.html" data-tracking='{"category": "home (devices)", "action": "web-player"}'><b>網路播放器</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0 animated animatedFadeInUp">
+                    <img class="center-block img-devices" src="//d2c87l0yth4zbw.global.ssl.fastly.net/i/home/all-devicesAB.svg" alt="一個帳戶。在各種裝置上播放。">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="subscription">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h2 class="text-white animated animatedFadeInUp">立即享受音樂。</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                        <div class="program">
+                            <div class="program-item">
+                                <div class="program-content">
+                                    <h3>Spotify 免費版</h3>
+                                    <span class="pricing">
+                                    <h4><span class="month">每月只要 </span>NT$0.00 元</h4>
+                                    </span>
+                                    <div class="features">
+                                        <ul class="spotify-free-list">
+                                            <li>隨機播放</li>
+                                            <li>全無廣告</li>
+                                            <li>無限略過次數</li>
+                                            <li>離線收聽</li>
+                                            <li>可播放任何歌曲</li>
+                                            <li>高音質音效</li>
+                                        </ul>
+                                    </div>
+                                    <a href="/tw/download/" class="btn btn-green js-goto-signup js-button-module-get-free" id="plan-get-free-button" data-tracking='{"category": "home (subscriptions)", "action": "free"}'>
+                                成為免費會員
+              </a>
+                                </div>
+                            </div>
+
+                            <div class="program-item">
+                                <div class="program-content">
+                                    <h3>Spotify Premium</h3>
+                                    <span class="pricing">
+                                    <h4><span class="month">每月只要 </span>NT$149.00 元</h4>
+                                    <p class="small">開始 30 天免費試用*</p>
+                                    <p class="small"><a href="/tw/family/" data-ga-category="home (subscriptions)" id="family-single-offer-link" data-ga-action="family">家庭</a>優惠方案實施中</p>
+                                    </span>
+                                    <div class="features">
+                                        <ul class="spotify-premium-list">
+                                            <li>隨機播放</li>
+                                            <li>全無廣告</li>
+                                            <li>無限略過次數</li>
+                                            <li>離線收聽</li>
+                                            <li>可播放任何歌曲</li>
+                                            <li>高音質音效</li>
+                                        </ul>
+                                    </div>
+                                    <a href="/tw/premium/?checkout=false" class="btn btn-green js-button-module-get-premium" id="plan-get-premium-button" data-tracking='{"category": "home (subscriptions)", "action": "premium"}'>
+                                註冊成為 Premium 會員
+              </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-white small small-detail text-center">
+                            * Spotify® 30 天免費試用優惠適用<a href="empty.html">使用條款與細則</a>。訂閱 Premium 或 Unlimited 服務的使用者，或是已經免費試用過的使用者，不符合使用此優惠的資格。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-default">
+            <div class="col-xs-12 col-md-2 footer-logo">
+                <a href="#"><span><img src="image/logo.png"/></span>&nbsp;Spotify</a>
+            </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <h5 class="footer-list-title">公司簡介</h5>
+                <ul class="footer-list">
+                    <li><a href="empty.html">關於我們</a></li>
+                    <li><a href="empty.html">職位空缺</a></li>
+                    <li><a href="empty.html">新聞發佈</a></li>
+                    <li><a href="empty.html">最新消息</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <h5 class="footer-list-title">社群</h5>
+                <ul class="footer-list">
+                    <li><a href="empty.html">藝人專屬</a></li>
+                    <li><a href="empty.html">開發商</a></li>
+                    <li><a href="empty.html">品牌合作夥伴</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <h5 class="footer-list-title">常用連結</h5>
+                <ul class="footer-list">
+                    <li><a href="empty.html">幫助中心</a></li>
+                    <li><a href="empty.html">禮物</a></li>
+                    <li><a href="empty.html">網路播放器</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-4 social-icon">
+                <a href="http://instagram.com/spotify" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/spotify" class="fa fa-twitter"></a>
+                <a href="https://www.facebook.com/Spotify" class="fa fa-facebook"></a>
+            </div>
+            <div id="footer-small-item">
+                <ul id="small-row">
+                    <li>
+                        <a href="empty.html">法律條款</a>
+                    </li>
+                    <li>
+                        <a href="empty.html">隱私權</a>
+                    </li>
+                    <li>
+                        <a href="empty.html">Cookies</a>
+                    </li>
+                    <li>
+                        <a href="empty.html">關於廣告</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
